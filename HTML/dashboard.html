@@ -8,47 +8,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style/dashboars.css">
+    <link rel="stylesheet" href="style/Css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--load all styles -->
 
 </head>
 
 <body>
+    <header>
     <div class="grid-container">
-        <div class="menu-icon">
+        <div  id="hum_menu" class="menu-icon">
             <i class="fas fa-bars header__menu"></i>
         </div>
-
-        <header class="header">
-            <div class="header__search"><input type="search" placeholder="Search ..."></div>
-            <div class="header__avatar">
-                <img src="#" alt="logo">
-            </div>
-        </header>
-
         <aside class="sidenav">
             <div class="sidenav__close-icon">
                 <i class="fas fa-times sidenav__brand-close"></i>
             </div>
             <ul class="sidenav__list">
-                <li class="sidenav__list-item"><i class="fas fa-home"></i><a href="#">Accueil</a></li>
-                <li class="sidenav__list-item"><i class="fas fa-plus-circle"></i><a href=#>Ajouter</a></li>
-                <li class="sidenav__list-item"><i class="fas fa-user"></i><a href="#">Profile</a></li>
+                <li class="sidenav__list-item">
+                    <i class="fas fa-home"></i>
+                    <a href="dashboard.html">Accueil</a>
+                </li>
+                <li class="sidenav__list-item"><i class="fas fa-plus-circle"></i><a href="add.html">Ajouter</a></li>
+                <li class="sidenav__list-item"><i class="fas fa-edit"></i><a href="modifier.html">Modifier</a></li>
             </ul>
         </aside>
-
-        <main class="main">
+    </header>
+     <main class="main">
+            <div class="recherch">
+                <div class="header__search"><input type="search" placeholder="Search ..."><i class="fas fa-search"></i></div>
+                <div class="header__avatar">
+                    <img src="#" alt="logo">
+                </div>
+            </div>
             <div class="main-cards">
                 <div class="card">
                     <table>
                         <tbody>
-                            <tr>
+                            <tr class="linecolr">
                                 <th class="first">
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">IDENTIFIANT</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -59,7 +61,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#1</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -71,7 +73,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#2</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -82,7 +84,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#3</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -93,7 +95,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#4</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -104,7 +106,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#4</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Catégorie</th>
@@ -115,7 +117,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#5</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -126,7 +128,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#6</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -137,7 +139,7 @@
                                     <input class="checkbox" type="checkbox">
                                 </th>
                                 <th class="id">#7</th>
-                                <th>Nom</th>
+                                <th class="nom">Nom</th>
                                 <th class="Prix">Prix</th>
                                 <th class="Catégorie">Catégorie</th>
                                 <th class="Quantité">Quantité</th>
@@ -158,15 +160,34 @@
                     </table>
                 </div>
             </div>
-        </main>
+                 
+            <footer class="footer">
+                <div class="footer__copyright">&copy; 2021 TOUTI/OUASMIN</div>
+                <div class="footer__signature">2022-2023 Youcode-teams | All rights reserved .</div>
+            </footer>
+    </main>
         
-        <footer class="footer">
-            <div class="footer__copyright">&copy; 2021 TOUTI/OUASMIN</div>
-            <div class="footer__signature">2022-2023 Youcode-teams | All rights reserved .</div>
-        </footer>
+   
     </div>
-    <script src="main.js"></script>
-    <script src="script.js"></script>
+  <script>
+              var humber = document.querySelector('#hum_menu')
+        var menu = document.querySelector('.sidenav__list')
+        var close = document.querySelector('.sidenav__close-icon')
+
+       
+        humber.addEventListener('click',()=>{
+            humber.style.display = "none"
+            close.style.display = "block"
+            menu.style.display = "block"
+        })
+
+        close.addEventListener('click',()=>{
+            close.style.display = "none"
+            humber.style.display = "block"
+            menu.style.display = "none"
+
+        })
+  </script>
       
 
 </body>

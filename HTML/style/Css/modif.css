@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    font-family: Poppins;
+}
+body{
+    background-color: #22B346;
+    display: flex;
+    flex-direction: row;
+}
+.main {
+    background-color: #16FF4F;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    width: 98%;
+    height: 100%;
+    border-radius: 40px;
+
+}
+input{
+    color: rgb(24, 24, 24);
+    border: none;
+    padding: 12px;
+}
+
+header{
+    display: flex;
+  flex-direction: row;
+  background-color: #22B346;
+  padding: 2% 3% 2% 1%;
+  color: white;
+   
+}
+.menu-icon,.sidenav__close-icon{
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+  align-items: center;
+  }
+
+   a{
+      color: white;
+      font-size: 22px;
+      font-style: none;
+      text-decoration: none;
+  
+  } 
+  
+  a:hover{
+      color: #dcf7c1;
+  }
+  .sidenav__list li{
+      margin-bottom: 2vw;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      
+  }
+  .recherch{
+      display: flex;
+      gap: 45vw;
+      background-color: white;
+      padding-top: 3%;
+      padding-left: 2%;
+      padding-bottom: 3%;
+      border-radius: 20px;
+      box-shadow: 1px 1px 19px 1px #88d936;
+  }
+  input{
+      border: none;
+      border-bottom: solid #13441f 1px;
+      border-radius: 4px;
+      height: 50px;
+  }
+  .header__search{
+      display: flex;
+      gap: 5px;
+      align-items :flex-end ;
+      color: rgb(170, 168, 168);
+  }
+ 
+  .flex{
+      display: flex;
+      flex-direction: column;
+  }
+  #Ajouter-le-produit{
+    background-color: white;
+    border:none;
+    border-radius: 10px;
+    color: gray;
+    width: 200px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  #Message{
+      border-radius: 5px;
+     resize: vertical; 
+  }
+
+  .footer{
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 3%;
+      border-radius: 20px;
+      box-shadow: 1px 1px 19px 1px #88d936;
+  }
+  
+
+.sidenav__list {
+    display: none;
+}
+
+.sidenav__close-icon {
+    display: none;
+}
+
+#check{
+    display: none;
+}
+  @media all and (max-width: 600px) {
+      body{
+          flex-direction: column;
+      }
+    }
