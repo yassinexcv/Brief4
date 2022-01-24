@@ -13,12 +13,13 @@ body{
     flex-direction: column;
     gap: 30px;
     padding-top: 2%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     padding-bottom: 2%;
     padding-right: 2%;
     width: 100%;
     height: 100%;
     border-radius: 40px;
+    font-size: 14px;
 }
 
 header{
@@ -62,11 +63,19 @@ a:hover{
     gap: 45vw;
     background-color: white;
     padding-top: 3%;
-    padding-left: 2%;
+    padding-inline: 2%;
     padding-bottom: 3%;
     border-radius: 20px;
     box-shadow: 1px 1px 19px 1px #88d936;
+    justify-content: space-between;
+    align-items: center;
 }
+.voir {
+    cursor: pointer;
+}
+/* .main-cards{
+    overflow-x: scroll;
+} */
 input{
     border: none;
     border-bottom: solid #13441f 1px;
@@ -82,6 +91,13 @@ tbody{
     flex-direction: column;
     gap: 1vw;
  
+}
+table{
+    width: 100%;
+}
+.linecolr{
+    display: flex;
+    justify-content: space-between;
 }
 .linecolr th{
    width: 180px;
@@ -113,8 +129,35 @@ tbody{
 #check{
     display: none;
 }
-@media all and (max-width: 600px) {
+
+@media all and (max-width: 500px) {
     body{
         flex-direction: column;
+    }
+    .header__avatar{
+       position: relative;  
+       /* left: -35%; */
+    }
+    img{
+        width: 100px;
+        z-index: 10;
+        position:relative ;
+        left: 20%;
+    }
+    .header__search{
+        position: relative;
+        right: 30%;
+    }
+    .fa-search{
+      position: relative;
+       left: -15%;
+       bottom: 20%;
+    }
+    table{
+        line-height: 3.6;
+
+    }
+    .main-cards{
+        overflow-x: scroll;
     }
   }

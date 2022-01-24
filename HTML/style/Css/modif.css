@@ -63,15 +63,17 @@ li{
       
   }
   .recherch{
-      display: flex;
-      gap: 45vw;
-      background-color: white;
-      padding-top: 3%;
-      padding-left: 2%;
-      padding-bottom: 3%;
-      border-radius: 20px;
-      box-shadow: 1px 1px 19px 1px #88d936;
-  }
+    display: flex;
+    gap: 45vw;
+    background-color: white;
+    padding-top: 3%;
+    padding-inline: 2%;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 19px 1px #88d936;
+    justify-content: space-between;
+    align-items: center;
+}
   input{
       border: none;
       border-bottom: solid #13441f 1px;
@@ -89,7 +91,7 @@ li{
       display: flex;
       flex-direction: column;
   }
-  #Ajouter-le-produit{
+  #Modifier-le-produit{
     background-color: white;
     border:none;
     border-radius: 10px;
@@ -104,6 +106,7 @@ li{
       border-radius: 5px;
      resize: vertical; 
   }
+  
 
   .footer{
       background-color: white;
@@ -126,8 +129,26 @@ li{
 #check{
     display: none;
 }
-  @media all and (max-width: 600px) {
-      body{
-          flex-direction: column;
-      }
+@media all and (max-width: 500px) {
+    body{
+        flex-direction: column;
     }
+    .header__avatar{
+       position: relative;
+      
+      
+    }
+    img{
+        width: 100px;
+        z-index: 10;
+    }
+    .header__search{
+        position: relative;
+        right: 35%;
+    }
+    .fa-search{
+      position: relative;
+       left: -15%;
+       bottom: 20%;
+    }
+  }
