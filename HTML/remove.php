@@ -1,4 +1,4 @@
-<?php
+2712<?php
         $con = mysqli_connect("localhost", "root", "", "shopNow");
 
         $id = $_GET['delete'];    
