@@ -62,9 +62,9 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                 <form action="dashboard.php" method="post" class="header__search">
                     <input type="search" name = 'chercher' placeholder="Search ..."><i class="fas fa-search"></i>
                 </form>
-                    <img src="style/img/LOGO.png" alt="">
+                    <!-- <img src="style/img/LOGO.png" alt=""> -->
                 </div>
-                <div class="header__search"><input type="search" placeholder="Search ..."><i class="fas fa-search"></i></div>
+                <!-- <div class="header__search"><input type="search" placeholder="Search ..."><i class="fas fa-search"></i></div> -->
             </div>
             <div class="main-cards">
                 <div class="card">
@@ -111,7 +111,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                                     </div>
                                         <th class="voir">
                                                 <!-- <button class="voir" type="submit" name="remove">remove</button> -->
-                                                <a href="./remove.php?delete=<?php echo $ligne['id'];?>">remove</a>
+                                                <!-- <a href="./remove.php?delete=<?php echo $ligne['id'];?>">remove</a> -->
                                         </th>
                                         
                                     </tr>  
